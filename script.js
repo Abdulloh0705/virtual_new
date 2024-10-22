@@ -1,3 +1,4 @@
+
 const title = document.querySelector('.virtual_text');
 const text = title.innerHTML;
 title.innerHTML = '';
@@ -18,11 +19,16 @@ const virtual_join = document.querySelector('.virtual_join');
 const virtual_watch = document.querySelector('.virtual_watch');
 
 const virtual_img = document.querySelector('.virtual_img');
-window.addEventListener('load', () => {
+
+function animation() {
   virtual_img.style.transform = `translateX(${scrollY})`
   nav_link.style.transform = `translateX(${scrollY})`
   virtual_join.style.transform = `translateX(${scrollY})`
   virtual_watch.style.transform = `translateX(${scrollY})`
   console.log(scrollY);
-});
+}
+
+
+window.addEventListener('scroll', animation);
+window.addEventListener('load', animation);
 
