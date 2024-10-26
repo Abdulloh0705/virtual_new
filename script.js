@@ -1,4 +1,3 @@
-
 const title = document.querySelector('.virtual_text');
 const text = title.innerHTML;
 title.innerHTML = '';
